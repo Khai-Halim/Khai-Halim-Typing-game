@@ -1,0 +1,111 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body{
+   background: #333;
+}
+
+.title{
+   background: #5b718e;
+   text-align: center;
+   padding: 1.3rem;
+   color: #efefef;
+}
+
+h1{
+   font-size: 2.5rem;
+}
+
+.message{
+   text-transform: capitalize;
+   text-align: center;
+   color: #efefef;
+   padding: 2rem;
+   font-size: 1.3rem;
+}
+
+#seconds{
+   font-size: 40px;
+   color: yellow;
+   line-height: 80px;
+}
+
+.word>div{
+   color: #efefef;
+   font-size: 4rem;
+   text-align: center;
+   padding-bottom: 3rem;
+
+   word-wrap: break-word;
+}
+
+.input{
+   text-align: center;
+}
+
+input{
+   width: 800px;
+   height: 50px;
+   max-width: 80%;
+   padding-left: 1rem;
+   font-weight: 600;
+   font-size: 20px;
+}
+
+#message{
+   color: #efefef;
+   text-align: center;
+   padding-top: 2rem;
+   font-size: 1.4rem;
+}
+
+.time-score{
+   text-align: center;
+   color: #efefef;
+   padding: 3rem;
+   font-weight: 800;
+   font-size: 1.2rem;
+}
+
+.time{
+   padding-bottom: 0.5rem;
+}
+
+.score{
+   
+}
+
+.instructions{
+   color: #efefef;
+   text-align: center;
+   background: #44657b;
+   padding: 2rem;
+}
+
+.instructions h2{
+   padding-bottom: 1rem;
+}
+
+.container{
+   width: 800px;
+   max-width: 80%;
+   margin: auto;
+}
+
+.highest-score{
+   margin-top: 5px;
+   text-align: right;
+}
+
+.correct{
+   color: green;
+}
+
+.incorrect{
+   color: red;
+}
+
