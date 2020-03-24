@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Object practice with javascript</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div class="title">
+      <h1>Khai's Typing Game</h1>
+   </div>
+   <div class="message">
+      <p>Type the given words before the time runs out. <br><span id="seconds"> Learn: PHP</span></p>
+   </div>
+   <div class="word container">
+      <div id="quote-display"></div>
+   </div>
+   <div class="input">
+      <input id="input" type="text" placeholder="Start typing..." autofocus spellcheck="false">
+   </div>
+   <div id="message">message</div>
+   <div class="time-score container">
+      <div class="time">Time Left: <span id="time">0</span></div> 
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="highest-score">Highest Score: <span id="highest-score">0</span></div>
+   </div>
+   <div class="instructions container">
+      <h2>Instructions</h2>
+      <p>Type the words in the given amount of seconds to score. You will gain time for each correct phrase. To play again, type the current words.</p>
+   </div>
+   
+   <script src="script.js"></script>
+</body>
+</html>
