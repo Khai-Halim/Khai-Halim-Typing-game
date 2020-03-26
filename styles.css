@@ -7,6 +7,7 @@
 
 body{
    background: #333;
+   height: 100vh;
 }
 
 .title{
@@ -20,6 +21,12 @@ h1{
    font-size: 2.5rem;
 }
 
+.container{
+   width: 80%;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
 .message{
    text-transform: capitalize;
    text-align: center;
@@ -29,6 +36,7 @@ h1{
 }
 
 #seconds{
+   text-align: left;
    font-size: 40px;
    color: yellow;
    line-height: 80px;
@@ -36,10 +44,9 @@ h1{
 
 .word>div{
    color: #efefef;
-   font-size: 4rem;
+   font-size: 2.5rem;
    text-align: center;
    padding-bottom: 3rem;
-
    word-wrap: break-word;
 }
 
@@ -64,41 +71,44 @@ input{
 }
 
 .time-score{
-   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
    color: #efefef;
-   padding: 3rem;
+   padding: 1rem 0 1rem 0;
    font-weight: 800;
    font-size: 1.2rem;
 }
 
-.time{
+.time-score .time{
+   display: inline-block;
+   text-align:left;
+   flex: 1;
+   white-space: nowrap;
    padding-bottom: 0.5rem;
 }
 
-.score{
-   
+.time-score .score{
+   display: inline-block;
+   text-align: center;
+   flex: 1;
+}
+
+.time-score .highest-score{
+   display: inline-block;
+   flex: 1;
+   white-space: nowrap;
+   text-align: right;
 }
 
 .instructions{
    color: #efefef;
    text-align: center;
    background: #44657b;
-   padding: 2rem;
+   padding: 1rem;
 }
 
 .instructions h2{
-   padding-bottom: 1rem;
-}
-
-.container{
-   width: 800px;
-   max-width: 80%;
-   margin: auto;
-}
-
-.highest-score{
-   margin-top: 5px;
-   text-align: right;
+   padding-bottom: 0.5rem;
 }
 
 .correct{
@@ -109,3 +119,8 @@ input{
    color: red;
 }
 
+@media(max-width: 700px){
+   :root{
+      font-size: 12px;
+   }
+}
